@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "sass:math";
+
 $primary-color: #444;
 $secondary-color: #eece1a;
 $show-home-image: true;
@@ -31,7 +34,7 @@ $background-opacity: 0.7;
 
 // Set text color
 @function set-text-color($color) {
-  @if (lightness($color) > 40) {
+  @if (color.channel($color, "lightness", $space: hsl) > 40) {
     @return black;
   } @else {
     @return white;
@@ -61,4 +64,11 @@ $background-opacity: 0.7;
   @media screen and (min-width: 1171px) {
     @content;
   }
+}
+
+// Clamped replacement for the deprecated lighten()/darken()
+// (negative $amount darkens, positive lightens, in percentage points)
+@function shift-lightness($color, $amount) {
+  $l: color.channel($color, "lightness", $space: hsl) + $amount * 1%;
+  @return color.change($color, $lightness: math.clamp(0%, $l, 100%), $space: hsl);
 }

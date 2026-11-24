@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "description": "Responsive Portfolio Website",
   "main": "index.js",
-  "homepage": "https://KariNarhi.github.io/portfolio-website",
+  "homepage": "",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "sass": "sass --no-source-map --watch scss:dist/css",
+    "build:css": "sass --no-source-map scss:dist/css",
     "deploy": "gh-pages -d dist"
   },
   "author": "Kari Närhi",
   "license": "MIT",
-  "dependencies": {
-    "gh-pages": "^3.1.0",
-    "node-sass": "^4.14.1"
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "sass": "^1.108.2"
   }
 }

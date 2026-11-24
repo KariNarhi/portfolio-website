@@ -1,3 +1,6 @@
+@use "config" as *;
+
+@mixin styles {
 // Widescreens
 @include mediaXL {
   .projects {
@@ -83,4 +86,5 @@
   .projects {
     grid-template-columns: 1fr;
   }
+}
 }

@@ -1,5 +1,6 @@
-@import "config";
-@import "menu";
+@use "config" as *;
+@use "menu";
+@use "mobile";
 
 * {
   box-sizing: border-box;
@@ -29,7 +30,7 @@ h3 {
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
+    background: rgba(shift-lightness($primary-color, 2), 0.5);
   }
 }
 
@@ -108,7 +109,7 @@ main {
   }
 
   .job {
-    background: lighten($primary-color, 5);
+    background: shift-lightness($primary-color, 5);
     padding: 0.5rem;
     border-bottom: 5px solid $secondary-color;
   }
@@ -172,22 +173,22 @@ main {
 
 .btn-dark {
   @extend .btn;
-  background: darken($primary-color, 50);
+  background: shift-lightness($primary-color, -50);
   color: #fff;
 }
 
 .btn-light {
   @extend .btn;
-  background: lighten($primary-color, 50);
+  background: shift-lightness($primary-color, 50);
   color: #333;
 }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: darken($primary-color, 10);
+  background: shift-lightness($primary-color, -10);
   color: set-text-color($primary-color);
   height: 60px;
 }
 
-@import "mobile";
+@include mobile.styles;
