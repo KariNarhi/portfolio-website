@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,6 +9,15 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600&display=swap"
+    />
+    <script>
+      document.documentElement.classList.add("i18n-loading");
+    </script>
     <link rel="stylesheet" href="css/main.css" />
     <title>Contact Me</title>
   </head>
@@ -19,53 +28,100 @@
         <div class="btn-line"></div>
         <div class="btn-line"></div>
       </div>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="fi">FI</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
       <nav class="menu">
         <div class="menu-branding">
           <div class="portrait"></div>
+          <ul class="contact-info">
+            <li>
+              <a href="#"
+                ><i class="fa fa-envelope"></i>
+                example@example.com
+              </a>
+            </li>
+            <li>
+              <i class="fa fa-phone"></i>
+              <span data-i18n="common.redacted">Redacted for privacy</span>
+            </li>
+            <li>
+              <i class="fa fa-map-marker"></i>
+              <span data-i18n="common.redacted">Redacted for privacy</span>
+            </li>
+          </ul>
+          <div class="menu-icons">
+            <a href="#">
+              <i class="fa fa-facebook-official fa-2x"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-linkedin-square fa-2x"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-github fa-2x"></i>
+            </a>
+          </div>
         </div>
         <ul class="menu-nav">
           <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link" data-i18n="menu.home">Home</a>
           </li>
           <li class="nav-item">
-            <a href="about.html" class="nav-link">About Me</a>
+            <a href="about.html" class="nav-link" data-i18n="menu.about"
+              >About Me</a
+            >
           </li>
           <li class="nav-item">
-            <a href="work.html" class="nav-link">My Work</a>
+            <a href="projects.html" class="nav-link" data-i18n="menu.projects"
+              >Projects</a
+            >
           </li>
           <li class="nav-item current">
-            <a href="contact.html" class="nav-link">Contact Me</a>
+            <a href="contact.html" class="nav-link" data-i18n="menu.contact"
+              >Contact Me</a
+            >
           </li>
         </ul>
       </nav>
     </header>
     <main id="contact">
-      <h1 class="lg-heading">Contact <span class="text-secondary">Me</span></h1>
-      <h2 class="sm-heading">How to reach me...</h2>
+      <h1 class="lg-heading" data-i18n="[html]contact.title">
+        Contact <span class="text-secondary">Me</span>
+      </h1>
+      <h2 class="sm-heading" data-i18n="contact.subtitle">
+        How to reach me...
+      </h2>
       <div class="boxes">
         <div>
-          <span class="text-secondary">
-            Email:
-          </span>
-          johndoe@test.com
+          <span class="text-secondary box-label" data-i18n="contact.email"
+            >Email:</span
+          >
+          <span class="box-value">example@example.com</span>
         </div>
         <div>
-          <span class="text-secondary">
-            Phone:
-          </span>
-          (555) 555-5555
+          <span class="text-secondary box-label" data-i18n="contact.phone"
+            >Phone:</span
+          >
+          <span class="box-value" data-i18n="common.redacted"
+            >Redacted for privacy</span
+          >
         </div>
         <div>
-          <span class="text-secondary">
-            Address
-          </span>
-          45 Web St. Redmond WA 10101
+          <span class="text-secondary box-label" data-i18n="contact.address"
+            >Address</span
+          >
+          <span class="box-value" data-i18n="common.redacted"
+            >Redacted for privacy</span
+          >
         </div>
       </div>
     </main>
-    <footer id="main-footer">
-      Copyright &copy; 2020
+    <footer id="main-footer" data-i18n="[html]footer.copyright">
+      Copyright &copy; 2026
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/i18next@27.2.9/dist/umd/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@4.1.2/i18nextHttpBackend.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

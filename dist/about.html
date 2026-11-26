@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,6 +9,15 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600&display=swap"
+    />
+    <script>
+      document.documentElement.classList.add("i18n-loading");
+    </script>
     <link rel="stylesheet" href="css/main.css" />
     <title>About Me</title>
   </head>
@@ -19,72 +28,323 @@
         <div class="btn-line"></div>
         <div class="btn-line"></div>
       </div>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="fi">FI</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
       <nav class="menu">
         <div class="menu-branding">
           <div class="portrait"></div>
+          <ul class="contact-info">
+            <li>
+              <a href="#"><i class="fa fa-envelope"></i> example@example.com</a>
+            </li>
+            <li>
+              <i class="fa fa-phone"></i>
+              <span data-i18n="common.redacted">Redacted for privacy</span>
+            </li>
+            <li>
+              <i class="fa fa-map-marker"></i>
+              <span data-i18n="common.redacted">Redacted for privacy</span>
+            </li>
+          </ul>
+          <div class="menu-icons">
+            <a href="#">
+              <i class="fa fa-facebook-official fa-2x"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-linkedin-square fa-2x"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-github fa-2x"></i>
+            </a>
+          </div>
         </div>
         <ul class="menu-nav">
           <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link" data-i18n="menu.home">Home</a>
           </li>
           <li class="nav-item current">
-            <a href="about.html" class="nav-link">About Me</a>
+            <a href="about.html" class="nav-link" data-i18n="menu.about"
+              >About Me</a
+            >
           </li>
           <li class="nav-item">
-            <a href="work.html" class="nav-link">My Work</a>
+            <a href="projects.html" class="nav-link" data-i18n="menu.projects"
+              >Projects</a
+            >
           </li>
           <li class="nav-item">
-            <a href="contact.html" class="nav-link">Contact Me</a>
+            <a href="contact.html" class="nav-link" data-i18n="menu.contact"
+              >Contact Me</a
+            >
           </li>
         </ul>
       </nav>
     </header>
     <main id="about">
-      <h1 class="lg-heading">About <span class="text-secondary">Me</span></h1>
-      <h2 class="sm-heading">Here's my story...</h2>
+      <h1 class="lg-heading" data-i18n="[html]about.title">
+        About <span class="text-secondary">Me</span>
+      </h1>
+      <h2 class="sm-heading" data-i18n="about.subtitle">Here's my story...</h2>
       <div class="about-info">
-        <img src="img/portrait.jpg" alt="John Doe" class="bio-image" />
+        <img src="img/portrait.jpg" alt="Portrait" class="bio-image" />
         <div class="bio">
-          <h3 class="text-secondary">BIO</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-            voluptatibus eius adipisci, aspernatur harum minus, sunt delectus,
-            deserunt libero fugit possimus sequi omnis? Aliquam tenetur
-            temporibus velit ex asperiores voluptatem?
+          <h3 class="text-secondary" data-i18n="about.summary.heading">
+            Summary
+          </h3>
+          <p data-i18n="about.summary.p1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p data-i18n="about.summary.p2">
+            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
         </div>
-        <div class="job job-1">
-          <h3>Webster</h3>
-          <h6>Front-end Developer</h6>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-            officia illo repellat possimus? Quod temporibus nisi, soluta omnis
-            maiores repellat.
+        <section class="story-section">
+          <h3 class="section-title" data-i18n="about.story.heading">
+            My Background
+          </h3>
+          <p data-i18n="about.story.p1">
+            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum.
           </p>
-        </div>
-        <div class="job job-2">
-          <h3>Servery</h3>
-          <h6>Backend Developer</h6>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-            officia illo repellat possimus? Quod temporibus nisi, soluta omnis
-            maiores repellat.
+          <p data-i18n="about.story.p2">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum.
           </p>
-        </div>
-        <div class="job job-3">
-          <h3>Stacky</h3>
-          <h6>Full-stack developer</h6>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-            officia illo repellat possimus? Quod temporibus nisi, soluta omnis
-            maiores repellat.
+          <p data-i18n="about.story.examplesIntro">
+            Lorem ipsum dolor sit amet:
           </p>
-        </div>
+          <ul>
+            <li data-i18n="about.story.ex1">
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </li>
+            <li data-i18n="about.story.ex2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </li>
+            <li data-i18n="about.story.ex3">
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris.
+            </li>
+          </ul>
+          <p data-i18n="about.story.p3">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa.
+          </p>
+          <p data-i18n="about.story.p4">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum.
+          </p>
+          <p data-i18n="about.story.p5">
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p data-i18n="about.story.p6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris.
+          </p>
+          <p data-i18n="about.story.p7">
+            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum.
+          </p>
+          <p data-i18n="about.story.p8">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa.
+          </p>
+          <p data-i18n="about.story.p9">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </section>
+        <section class="skills-section">
+          <h3 class="section-title" data-i18n="about.skills.heading">
+            Tools and Skills
+          </h3>
+          <div class="skills">
+            <div class="job">
+              <h3 data-i18n="about.skills.frontend">Frontend</h3>
+              <ul class="chips">
+                <li>Angular</li>
+                <li>React / Next.js</li>
+                <li>TypeScript</li>
+                <li>SCSS</li>
+                <li>Tailwind</li>
+                <li>Material UI</li>
+              </ul>
+            </div>
+            <div class="job">
+              <h3 data-i18n="about.skills.backend">Backend</h3>
+              <ul class="chips">
+                <li>Node.js</li>
+                <li>REST</li>
+                <li>GraphQL</li>
+                <li>Firebase</li>
+                <li>Supabase</li>
+              </ul>
+            </div>
+            <div class="job">
+              <h3 data-i18n="about.skills.databases">Databases</h3>
+              <ul class="chips">
+                <li>NoSQL (Firebase, MongoDB)</li>
+                <li>PostgreSQL (Supabase)</li>
+                <li>SQLite</li>
+              </ul>
+            </div>
+            <div class="job">
+              <h3 data-i18n="about.skills.devops">DevOps/Cloud</h3>
+              <ul class="chips">
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>GitLab</li>
+                <li>Docker</li>
+                <li>Google Cloud Platform</li>
+                <li>DigitalOcean</li>
+                <li>GitHub Actions</li>
+                <li>GitLab CI</li>
+              </ul>
+            </div>
+            <div class="job">
+              <h3 data-i18n="about.skills.mobile">Mobile</h3>
+              <ul class="chips">
+                <li>Flutter</li>
+              </ul>
+            </div>
+            <div class="job">
+              <h3 data-i18n="about.skills.ai">AI</h3>
+              <ul class="chips">
+                <li>GitHub Copilot</li>
+                <li>Devin Desktop (Windsurf)</li>
+                <li>Claude</li>
+              </ul>
+            </div>
+            <div class="job">
+              <h3 data-i18n="about.skills.other">Other</h3>
+              <ul class="chips">
+                <li>Linux</li>
+                <li>Raspberry Pi</li>
+                <li>Kanban</li>
+                <li>Scrum</li>
+                <li>ClickUp</li>
+                <li>Jira</li>
+                <li>n8n</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="experience-section">
+          <h3 class="section-title" data-i18n="about.experience.heading">
+            Work Experience
+          </h3>
+          <div class="experience">
+            <div class="job">
+              <h3 data-i18n="about.experience.job1.role">Lorem Ipsum</h3>
+              <h6 data-i18n="about.experience.job1.company">
+                Dolor Sit Amet, Consectetur
+              </h6>
+              <p class="job-date">MM/YYYY – MM/YYYY</p>
+              <p data-i18n="about.experience.job1.desc">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum.
+              </p>
+            </div>
+            <div class="job">
+              <h3 data-i18n="about.experience.job2.role">Lorem Ipsum</h3>
+              <h6 data-i18n="about.experience.job2.company">
+                Dolor Sit Amet, Consectetur
+              </h6>
+              <p class="job-date">MM/YYYY – MM/YYYY</p>
+              <p data-i18n="about.experience.job2.desc">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris.
+              </p>
+            </div>
+            <div class="job">
+              <h3 data-i18n="about.experience.job3.role">Lorem Ipsum</h3>
+              <h6 data-i18n="about.experience.job3.company">
+                Dolor Sit Amet, Consectetur
+              </h6>
+              <p class="job-date">MM/YYYY – MM/YYYY</p>
+              <p data-i18n="about.experience.job3.desc">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris.
+              </p>
+            </div>
+            <div class="job">
+              <h3 data-i18n="about.experience.job4.role">
+                Lorem Ipsum
+              </h3>
+              <h6 data-i18n="about.experience.job4.company">
+                Dolor Sit Amet, Consectetur
+              </h6>
+              <p class="job-date">MM/YYYY – MM/YYYY</p>
+              <p data-i18n="about.experience.job4.desc">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="education-section">
+          <h3 class="section-title" data-i18n="about.education.heading">
+            Education
+          </h3>
+          <div class="education">
+            <div class="job">
+              <h3 data-i18n="about.education.school1.degree">
+                Lorem Ipsum Dolor Sit Amet
+              </h3>
+              <h6 data-i18n="about.education.school1.school">
+                Consectetur Adipiscing Elit, Tempor
+              </h6>
+              <p class="job-date">YYYY – YYYY</p>
+              <p data-i18n="about.education.school1.desc">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris.
+              </p>
+            </div>
+            <div class="job">
+              <h3 data-i18n="about.education.school2.degree">
+                Lorem Ipsum Dolor Sit Amet
+              </h3>
+              <h6 data-i18n="about.education.school2.school">
+                Consectetur Adipiscing Elit, Tempor
+              </h6>
+              <p class="job-date">YYYY</p>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
-    <footer id="main-footer">
-      Copyright &copy; 2020
+    <footer id="main-footer" data-i18n="[html]footer.copyright">
+      Copyright &copy; 2026
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/i18next@27.2.9/dist/umd/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@4.1.2/i18nextHttpBackend.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

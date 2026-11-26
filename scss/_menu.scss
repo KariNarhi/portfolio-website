@@ -4,8 +4,13 @@
 .menu-btn {
   position: absolute;
   z-index: 3;
-  right: 35px;
-  top: 35px;
+  right: 15px;
+  top: 0;
+  height: $header-height;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   cursor: pointer;
   @include easeOut;
 
@@ -13,7 +18,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: set-text-color($primary-color);
+    background: #fff;
     @include easeOut;
   }
 
@@ -34,6 +39,35 @@
       &:nth-child(3) {
         transform: rotate(-45deg) translate(6.5px, -6.5px);
       }
+    }
+  }
+}
+
+// Language switcher (FI | EN), sits left of the menu button
+.lang-switch {
+  position: absolute;
+  z-index: 3;
+  right: 100px;
+  top: 0;
+  height: $header-height;
+  align-items: center;
+  display: flex;
+  gap: 0.2rem;
+
+  button {
+    padding: 0.5rem 0.6rem;
+    border: 0;
+    background: none;
+    color: #fff;
+    font-family: $font-display;
+    font-size: 1.6rem;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    @include easeOut;
+
+    &:hover,
+    &.active {
+      color: $warm-yellow;
     }
   }
 }
@@ -66,7 +100,7 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: rgba(shift-lightness($primary-color, -5), 0.9);
+    background: rgba($deep-violet, 0.95);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut();
@@ -79,7 +113,7 @@
 
   // Branding side
   &-branding {
-    background: rgba($primary-color, 0.9);
+    background: rgba($purple, 0.95);
     transform: translate3d(0, 100%, 0);
     @include easeOut();
 
@@ -91,9 +125,46 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/portrait.jpg");
+      background: url("../img/portrait.jpg") center / cover no-repeat;
       border-radius: 50%;
-      border: solid 3px $secondary-color;
+      border: solid 4px $warm-yellow;
+      box-shadow: 0 0 0 6px rgba($magenta, 0.5);
+    }
+
+    .contact-info {
+      margin: 2rem 0 0;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+      font-size: 1.1rem;
+
+      li {
+        margin-bottom: 0.4rem;
+      }
+
+      i {
+        color: $orange;
+        width: 1.4em;
+      }
+
+      a:hover {
+        color: $warm-yellow;
+        @include easeOut();
+      }
+    }
+
+    .menu-icons {
+      margin-top: 1.5rem;
+
+      a {
+        padding: 0.4rem;
+        color: #fff;
+        @include easeOut();
+
+        &:hover {
+          color: $warm-yellow;
+        }
+      }
     }
   }
 
@@ -107,23 +178,25 @@
     }
 
     &.current > a {
-      color: $secondary-color;
+      color: $warm-yellow;
     }
   }
 
   .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 30px;
+    font-family: $font-display;
+    font-size: 3rem;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    padding: 1rem 0;
-    font-weight: bold;
-    color: set-text-color($primary-color);
+    padding: 0.5rem 0;
+    font-weight: 400;
+    color: #fff;
     text-decoration: none;
     @include easeOut();
 
     &:hover {
-      color: $secondary-color;
+      color: $warm-yellow;
     }
   }
 }

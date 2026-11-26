@@ -3,16 +3,16 @@
   "version": "1.0.0",
   "description": "Responsive Portfolio Website",
   "main": "index.js",
-  "homepage": "",
   "scripts": {
+    "start": "npm run build:css && serve dist",
+    "serve": "serve dist",
     "sass": "sass --no-source-map --watch scss:dist/css",
-    "build:css": "sass --no-source-map scss:dist/css",
-    "deploy": "gh-pages -d dist"
+    "build:css": "sass --no-source-map scss:dist/css"
   },
   "author": "Kari Närhi",
   "license": "MIT",
   "devDependencies": {
-    "gh-pages": "^6.3.0",
-    "sass": "^1.108.2"
+    "sass": "^1.108.2",
+    "serve": "^14.2.8"
   }
 }

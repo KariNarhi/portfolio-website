@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "home": "Esimerkki – Portfolio",
+    "about": "Tietoa minusta",
+    "projects": "Projektit",
+    "contact": "Ota yhteyttä"
+  },
+  "menu": {
+    "home": "Etusivu",
+    "about": "Tietoa minusta",
+    "projects": "Projektit",
+    "contact": "Ota yhteyttä"
+  },
+  "common": {
+    "redacted": "Piilotettu yksityisyyden vuoksi"
+  },
+  "footer": {
+    "copyright": "Copyright &copy; 2026"
+  },
+  "home": {
+    "tagline": "Minun portfolioni"
+  },
+  "projects": {
+    "title": "Omat <span class=\"text-secondary\">projektini</span>",
+    "subtitle": "Tutustu näihin...",
+    "notPublished": "Ei julkaistu"
+  },
+  "contact": {
+    "title": "Ota <span class=\"text-secondary\">yhteyttä</span>",
+    "subtitle": "Näin tavoitat minut...",
+    "email": "Sähköposti:",
+    "phone": "Puhelin:",
+    "address": "Osoite:"
+  },
+  "about": {
+    "title": "Tietoa <span class=\"text-secondary\">minusta</span>",
+    "subtitle": "Tässä tarinani...",
+    "summary": {
+      "heading": "Yhteenveto",
+      "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "p2": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. Excepteur sint occaecat cupidatat non proident, sunt in culpa. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    "story": {
+      "heading": "Taustani",
+      "p1": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
+      "p2": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
+      "examplesIntro": "Lorem ipsum dolor sit amet:",
+      "ex1": "Excepteur sint occaecat cupidatat non proident, sunt in culpa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "ex2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "ex3": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+      "p3": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
+      "p4": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. Excepteur sint occaecat cupidatat non proident, sunt in culpa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
+      "p5": "Excepteur sint occaecat cupidatat non proident, sunt in culpa. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "p6": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+      "p7": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
+      "p8": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
+      "p9": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. Excepteur sint occaecat cupidatat non proident, sunt in culpa. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    "skills": {
+      "heading": "Työkalut ja taidot",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "databases": "Tietokannat",
+      "devops": "DevOps/Cloud",
+      "mobile": "Mobiili",
+      "ai": "Tekoäly",
+      "other": "Muut"
+    },
+    "experience": {
+      "heading": "Työkokemus",
+      "job1": {
+        "role": "Lorem Ipsum",
+        "company": "Dolor Sit Amet, Consectetur",
+        "desc": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum."
+      },
+      "job2": {
+        "role": "Lorem Ipsum",
+        "company": "Dolor Sit Amet, Consectetur",
+        "desc": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+      },
+      "job3": {
+        "role": "Lorem Ipsum",
+        "company": "Dolor Sit Amet, Consectetur",
+        "desc": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+      },
+      "job4": {
+        "role": "Lorem Ipsum",
+        "company": "Dolor Sit Amet, Consectetur",
+        "desc": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+      }
+    },
+    "education": {
+      "heading": "Koulutus",
+      "school1": {
+        "degree": "Lorem Ipsum Dolor Sit Amet",
+        "school": "Consectetur Adipiscing Elit, Tempor",
+        "desc": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+      },
+      "school2": {
+        "degree": "Lorem Ipsum Dolor Sit Amet",
+        "school": "Consectetur Adipiscing Elit, Tempor"
+      }
+    }
+  }
+}
